@@ -7,7 +7,7 @@
 
 ### Session 1: Deep learning in public policy
 
-*Learning objectives.* What deep learning is, where it already sits in public-sector decision making, and wha t this course will and will not claim for it.
+*Learning objectives.* What deep learning is, where it already sits in public-sector decision making, and what this course will and will not claim for it.
 
 #### Session 1 readings
 
@@ -25,7 +25,7 @@
 
 ### Session 2: Deep neural networks (1)
 
-*Learning objectives.* Perceptrons, activation functions and the forward pass; why depth buys representationa l power.
+*Learning objectives.* Perceptrons, activation functions and the forward pass; why depth buys representational power.
 
 #### Session 2 readings
 
@@ -74,15 +74,15 @@ https://playground.tensorflow.org/
 
 ### Session 6: Sequence methods and time-series analysis
 
-*Learning objectives.* Recurrent architectures and their limits; where classical time-series methods remain t he better tool.
+*Learning objectives.* Recurrent architectures and their limits; where classical time-series methods remain the better tool.
 
 ### Session 7: Natural language processing (1)
 
-*Learning objectives.* Text as data: tokenisation, embeddings, and what a language model is actually estimati ng.
+*Learning objectives.* Text as data: tokenisation, embeddings, and what a language model is actually estimating.
 
 ### Session 8: Natural language processing (2): Encoder-decoder architecture and attention
 
-*Learning objectives.* The attention mechanism and the transformer, read through the papers that introduced t hem.
+*Learning objectives.* The attention mechanism and the transformer, read through the papers that introduced them.
 
 #### Session 8 readings
 
@@ -106,7 +106,7 @@ https://playground.tensorflow.org/
 
 ### Session 10: Policy approaches to regulate deep learning
 
-*Learning objectives.* Regulation, auditing and the documented harms of large models, with the EU AI Act as t he worked case.
+*Learning objectives.* Regulation, auditing and the documented harms of large models, with the EU AI Act as the worked case.
 
 #### Session 10 readings
 
