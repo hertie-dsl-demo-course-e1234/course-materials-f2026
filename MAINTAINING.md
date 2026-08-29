@@ -24,7 +24,7 @@ Any top-level directory containing at least one ordinal-prefixed subdirectory (`
 - `readings/01_session-1/` - one folder per session's readings. Just drop the readings in and every file is listed and linked for enrolled students automatically. An additional `READINGS.md` (or `.txt`/`.bib`) is OPTIONAL prose - a link to read online, or a citation; it is published publicly, while the files stay behind the enrolled-student gate (unless a public site toggles on `actual-readings`)
 - root files - your syllabus under any name (`SYLLABUS.md`, `SYLLABUS.pdf`, ...) and `README.md`: released by naming the file as the release path (the runner is case sensitive)
 
-Add more sessions by creating `lectures/02_session-2/`, `readings/02_session-2/`, ... (only the ordinal prefix matters - name the rest whatever you like), or add a whole new section (e.g. `datasets/01_intro/`). If you release materials by hand, run **Refresh actions** afterwards so the session dropdown and the Release workflow's section toggles pick it up - unnecessary if you release via `schedule.yml`.
+Add more sessions by creating `lectures/02_session-2/`, `readings/02_session-2/`, ... (only the ordinal prefix matters - name the rest whatever you like), or add a whole new section (e.g. `datasets/01_intro/`). Nothing needs refreshing afterwards: the Release workflows take the path as free text (`course_source_path`), so a new session or section is releasable the moment you push it. **Refresh actions** repopulates the repo/cohort dropdowns, and runs itself nightly.
 
 ## Available actions
 
