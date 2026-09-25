@@ -8,7 +8,7 @@ Reference for faculty & instructors on how to populate and operate this material
 
 | You edit / add | Visible to students? | Notes |
 | --- | --- | --- |
-| `lectures/`, `labs/`, `readings/` (and any other section folders) | Yes, when you release that session | The released files are copied into the cohort `materials` repo, or another destination path you name. |
+| `lectures/`, `labs/`, `readings/` (and any other section folders) | Yes, when you release that session | The released files are copied into the semester `materials` repo, or another destination path you name. |
 | root files - `SYLLABUS.md`, `README.md`, or any name you use | Yes, when you name the file as the release path | A root file is released like any other path: type `SYLLABUS.pdf` (or whatever the file is called) as the `course_source_path`. |
 | `MAINTAINING.md` (this file) | No | Your reference; never released. Leave it in the repo. |
 | `.github/workflows/` (the Release workflows) | No | **Infrastructure - do not edit or delete.** These run-from-repo workflows are what make releasing work; **Refresh actions** re-seeds them. |
@@ -24,7 +24,7 @@ Any top-level directory containing at least one ordinal-prefixed subdirectory (`
 - `readings/01_session-1/` - one folder per session's readings. Just drop the readings in and every file is listed and linked for enrolled students automatically. An additional `READINGS.md` (or `.txt`/`.bib`) is OPTIONAL prose - a link to read online, or a citation; it is published publicly, while the files stay behind the enrolled-student gate (unless a public site toggles on `actual-readings`)
 - root files - your syllabus under any name (`SYLLABUS.md`, `SYLLABUS.pdf`, ...) and `README.md`: released by naming the file as the release path (the runner is case sensitive)
 
-Add more sessions by creating `lectures/02_session-2/`, `readings/02_session-2/`, ... (only the ordinal prefix matters - name the rest whatever you like), or add a whole new section (e.g. `datasets/01_intro/`). Nothing needs refreshing afterwards: the Release workflows take the path as free text (`course_source_path`), so a new session or section is releasable the moment you push it. **Refresh actions** repopulates the repo/cohort dropdowns, and runs itself nightly.
+Add more sessions by creating `lectures/02_session-2/`, `readings/02_session-2/`, ... (only the ordinal prefix matters - name the rest whatever you like), or add a whole new section (e.g. `datasets/01_intro/`). Nothing needs refreshing afterwards: the Release workflows take the path as free text (`course_source_path`), so a new session or section is releasable the moment you push it. **Refresh actions** repopulates the repo/semester dropdowns, and runs itself nightly.
 
 ## Available actions
 
@@ -32,12 +32,12 @@ The course org's [`.github` Actions tab](https://github.com/hertie-dsl-demo-cour
 
 | Action | What it does |
 | --- | --- |
-| **Release materials** | Copy any path - session folders, root files - into a cohort's `materials` repo by default, or a destination path you name. |
-| **Release assignment** | Freeze an assignment template, then generate one private repo per student (or per team) in the cohort org. |
+| **Release materials** | Copy any path - session folders, root files - into a semester's `materials` repo by default, or a destination path you name. |
+| **Release assignment** | Freeze an assignment template, then generate one private repo per student (or per team) in the semester org. |
 | **New materials repo** | Scaffold a correctly structured materials repo; the release workflows come bootstrapped with it. |
 | **New assignment** | Scaffold an assignment template (brief + starter(s); the `solution` branch holds the model answer and `grading_config.yml`); the release workflows come bootstrapped with it. |
 | **Refresh actions** | Re-seed the workflows and repopulate dropdowns after you add sessions/sections/repos. |
-| **Check cohort setup** | Read-only per-cohort checklist of what's configured - it says what still needs doing. |
+| **Check semester setup** | Read-only per-semester checklist of what's configured - it says what still needs doing. |
 
 (**Release materials** and **Release assignment** also appear in this repo's own Actions tab.)
 
