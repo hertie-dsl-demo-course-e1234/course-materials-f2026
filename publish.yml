@@ -1,12 +1,14 @@
 # INSTRUCTOR-OWNED - yours. Written once when this repo was scaffolded, and never
 # rewritten by the toolkit, so anything you put here stays.
 #
-# What the cohort site hosts PUBLICLY, so a rendered deck opens in a browser instead of
-# showing as source on GitHub. Same syntax as .gitignore, relative to this repo. Anything
-# unmatched stays exactly as it is today: enrolled students open it on GitHub. A deck's
-# <name>_files/ bundle follows its deck. solution/, tests/, grading files and .env are
-# never copied whatever is written here. Applies to every cohort of this course. Edit,
-# then press Sync site (or wait for the next release / daily sync).
+# What the public website may publish, so a rendered deck opens in a browser instead of
+# showing as source on GitHub. Not used yet: the toolkit records this selection until the
+# public website is rebuilt. Same syntax as .gitignore, relative to this repo. Anything
+# unmatched stays private: enrolled students open it on GitHub. A deck's <name>_files/,
+# media/, libs/ and images/ folders follow it. Unlike .gitignore, a negated folder
+# ("!labs/sub/") excludes its whole subtree. solution/, tests/, grading files and .env are
+# never published whatever is written here. Applies to every semester of this course.
+# Full rules: https://github.com/hertie-data-science-lab/dsl-teaching-toolkit/blob/main/docs/02-add-materials-to-course.md
 public:
   - "lectures/**/*.html"
   - "lectures/**/*.pdf"
