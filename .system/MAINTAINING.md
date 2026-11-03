@@ -17,14 +17,9 @@ Rule of thumb: edit the content folders and the two root files; leave `MAINTAINI
 
 ## Structure
 
-Any top-level directory containing at least one ordinal-prefixed subdirectory (`01_`, `02_`, `03_`, ...) is a releasable section:
+Any layout you like: folder names mean nothing to the toolkit. The semester's `schedule.yml` says what each release is - a lecture, a lab, readings - and which files it ships (`files:`, any path in this repo). The scaffold starts you with empty `lectures/`, `labs/` and `readings/` folders; rename, add or delete them freely. A reading list is written in the schedule (`reading_list:` on a `readings:` entry), not in a file here.
 
-- `lectures/01_session-1/` - one folder per session's lecture files
-- `labs/01_session-1/` - one folder per session's lab (delete the `labs/` folder if your course has none)
-- `readings/01_session-1/` - one folder per session's readings. Just drop the readings in and every file is listed and linked for enrolled students automatically. An additional `READINGS.md` (or `.txt`/`.bib`) is OPTIONAL prose - a link to read online, or a citation; it is published publicly, while the files stay behind the enrolled-student gate (unless a public site toggles on `actual-readings`)
-- root files - your syllabus under any name (`SYLLABUS.md`, `SYLLABUS.pdf`, ...) and `README.md`: released by naming the file as the release path (the runner is case sensitive)
-
-Add more sessions by creating `lectures/02_session-2/`, `readings/02_session-2/`, ... (only the ordinal prefix matters - name the rest whatever you like), or add a whole new section (e.g. `datasets/01_intro/`). Nothing needs refreshing afterwards: the Release workflows take the path as free text (`course_source_path`), so a new session or section is releasable the moment you push it. **Refresh actions** repopulates the repo/semester dropdowns, and runs itself nightly.
+A root file - your syllabus under any name (`SYLLABUS.md`, `SYLLABUS.pdf`, ...) or `README.md` - is released by naming it as a file's `path` (the runner is case sensitive). Nothing needs refreshing after you add a folder: a path is free text, so new material is releasable the moment you push it.
 
 ## Available actions
 
@@ -37,7 +32,7 @@ The course org's [`.github` Actions tab](https://github.com/hertie-dsl-demo-cour
 | **New materials repo** | Scaffold a correctly structured materials repo; the release workflows come bootstrapped with it. |
 | **New assignment** | Scaffold an assignment template (brief + starter(s); the `solution` branch holds the model answer and `grading_config.yml`); the release workflows come bootstrapped with it. |
 | **Refresh actions** | Re-seed the workflows and repopulate dropdowns after you add sessions/sections/repos. |
-| **Check semester setup** | Read-only per-semester checklist of what's configured - it says what still needs doing. |
+| **Check** (Instructor Console) | Per-semester checklist of what's configured - it says what still needs doing. |
 
 (**Release materials** and **Release assignment** also appear in this repo's own Actions tab.)
 
