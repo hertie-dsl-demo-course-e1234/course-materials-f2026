@@ -12,5 +12,3 @@
   <https://www.deeplearningbook.org/contents/intro.html>
 
 *This is a public repository, so copyrighted readings are cited rather than redistributed.*
-
-<!-- validation edit 2026-11-05 -->
