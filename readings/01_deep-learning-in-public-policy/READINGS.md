@@ -12,7 +12,3 @@
   <https://www.deeplearningbook.org/contents/intro.html>
 
 *This is a public repository, so copyrighted readings are cited rather than redistributed.*
-
-- Validation line (sheet mount), 5 Nov 2026.
-
-- Edited on GitHub behind the sheet (conflict test).
